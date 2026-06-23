@@ -1,6 +1,7 @@
 :root {
     --cor-primaria: rgba(102, 183, 255, 1);
     --cor-textos: #a2a2a2;
+    --cor-builds: rgba(0, 136, 255, 0.07);
     --fontes: 'Iosevka Charon Mono', monospace;
 }
 
@@ -159,7 +160,7 @@ nav a {
 }
 
 .build-card {
-    background-color: rgba(255, 255, 255, 0.04);
+    background-color: var(--cor-builds);
     border: 1px solid rgba(102, 183, 255, 0.25);
     border-radius: 10px;
     padding: 1.5rem;
@@ -275,5 +276,111 @@ nav a {
 
     nav {
         gap: 0.8rem;
+    }
+}
+.divisor {
+
+    height: 2px;
+    background-color: var(--cor-primaria);
+    opacity: 0.3;
+    margin: 0 4rem;
+}
+
+    .divisor-texto{
+        color: var(--cor-textos);
+        font-family: var(--fontes);
+    }
+
+.promocoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 4rem;
+}
+
+.ver-todas {
+    font-family: var(--fontes);
+    font-size: clamp(0.7rem, 0.9vw, 0.9rem);
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+
+.ver-todas:hover {
+    text-decoration: underline;
+}
+
+.cards-promocoes {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 4rem 3rem;
+}
+
+.card-promo {
+    flex: 1;
+    border: 1px solid rgba(102, 183, 255, 0.25);
+    border-radius: 8px;
+    padding: 1rem;
+    font-family: var(--fontes);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    background-color: var(--cor-builds);
+}
+
+.card-promo-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-loja {
+    font-size: clamp(0.65rem, 0.8vw, 0.85rem);
+    color: var(--cor-textos);
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.card-badge-desc {
+    font-size: clamp(0.65rem, 0.8vw, 0.8rem);
+    font-weight: 700;
+    color: black;
+    background-color: var(--cor-primaria);
+    border-radius: 4px;
+    padding: 2px 6px;
+}
+
+.card-nome {
+    font-size: clamp(0.75rem, 1vw, 0.95rem);
+    color: white;
+    line-height: 1.4;
+}
+
+.card-precos {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: auto;
+}
+
+.preco-antigo {
+    font-size: clamp(0.65rem, 0.8vw, 0.85rem);
+    color: var(--cor-textos);
+    text-decoration: line-through;
+}
+
+.preco-atual {
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    color: var(--cor-primaria);
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .cards-promocoes {
+        flex-direction: column;
+        padding: 1rem 1.5rem 2rem;
+    }
+
+    .promocoes {
+        padding: 0.5rem 1.5rem;
     }
 }
