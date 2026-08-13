@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guia Completo de Peças — BuildsHub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="topbar">
+  <div class="logo">BUILDS<span>HUB</span></div>
+  <nav class="nav-links" aria-label="Ir direto para um componente">
+    <a href="#cpu-detalhe">CPU</a>
+    <a href="#gpu-detalhe">GPU</a>
+    <a href="#placa-mae-detalhe">Placa-mãe</a>
+    <a href="#ram-detalhe">RAM</a>
+  </nav>
+</div>
+
+<header class="hero">
+  <div class="eyebrow">Guia de peças — versão completa</div>
+  <h1>ENTENDA CADA COMPONENTE</h1>
+  <p>Tudo o que você precisa saber antes de comprar: o que cada peça faz, quais números importam de verdade e onde as pessoas mais erram na hora de montar um PC.</p>
+  <p style="margin-top:18px;"><a class="back-link" href="index.html#guia-de-pecas">← Voltar para o guia rápido</a></p>
+</header>
+
+<!-- ═══════════ CPU ═══════════ -->
+<section id="cpu-detalhe" class="component">
+  <div class="tag">Componente 01</div>
+  <h2><span class="icon-box">▤</span> Processador (CPU)</h2>
+
+  <p>O processador é o cérebro do PC: ele executa as instruções de todos os programas, do sistema operacional aos jogos. É o componente que mais define a "velocidade de resposta" da máquina em tarefas do dia a dia e o quanto o PC segura jogos mais pesados sem engargalar.</p>
+
+  <h3>O que olhar na hora de comprar</h3>
+  <ul>
+    <li><b>Núcleos e threads:</b> mais núcleos ajudam em tarefas que rodam várias coisas ao mesmo tempo — edição de vídeo, live, várias abas e programas abertos. Para jogos, o que mais pesa costuma ser o desempenho por núcleo, não a quantidade.</li>
+    <li><b>Clock (GHz):</b> a frequência de operação. Compare sempre dentro da mesma geração/família — um clock mais alto de uma CPU antiga não bate um clock menor de uma CPU nova.</li>
+    <li><b>Soquete (socket):</b> precisa ser compatível com a placa-mãe (ex: AM5 para Ryzen atuais, LGA1700 para Intel). Esse é o erro de compra mais comum.</li>
+    <li><b>Geração:</b> quanto mais recente, melhor a eficiência energética e o desempenho por núcleo, mesmo em specs parecidas no papel.</li>
+  </ul>
+
+  <h3>Gargalo (bottleneck)</h3>
+  <p>Se o processador for fraco demais para a placa de vídeo, ele "segura" a GPU e você não aproveita o desempenho total dela — isso é o gargalo de CPU. O caminho contrário também existe. O ideal é equilibrar CPU e GPU dentro da mesma faixa de preço/uso.</p>
+
+  <div class="callout"><b>Regra prática:</b> para jogos em 1080p/1440p, priorize clock alto e bom desempenho por núcleo. Para trabalho pesado (render, edição, compilação), priorize mais núcleos/threads.</div>
+
+  <a class="top-of-section" href="#cpu-detalhe">↑ topo desta seção</a>
+</section>
+
+<!-- ═══════════ GPU ═══════════ -->
+<section id="gpu-detalhe" class="component">
+  <div class="tag">Componente 02</div>
+  <h2><span class="icon-box">▥</span> Placa de Vídeo (GPU)</h2>
+
+  <p>A placa de vídeo é responsável por processar e renderizar tudo o que aparece na tela: texturas, iluminação, efeitos e resolução. É o componente mais essencial para jogos, edição de vídeo, modelagem 3D e qualquer trabalho gráfico pesado.</p>
+
+  <h3>O que olhar na hora de comprar</h3>
+  <ul>
+    <li><b>VRAM (memória de vídeo):</b> define quanto de textura/dados a placa consegue segurar. Hoje, 8GB é o mínimo confortável para 1080p/1440p em jogos atuais; para 4K ou uso profissional, o ideal é 12GB ou mais.</li>
+    <li><b>Resolução-alvo:</b> escolha a GPU pensando na resolução do seu monitor (1080p, 1440p ou 4K) — comprar uma placa muito acima ou muito abaixo do monitor é desperdício ou gargalo.</li>
+    <li><b>Consumo (TDP) e fonte:</b> placas mais potentes exigem fontes de alimentação mais robustas e, às vezes, conectores específicos. Sempre confira a fonte recomendada pelo fabricante.</li>
+    <li><b>Espaço físico:</b> confira o tamanho da placa (comprimento/altura) contra o seu gabinete antes de comprar.</li>
+  </ul>
+
+  <h3>Compatibilidade</h3>
+  <p>A GPU se conecta ao slot PCIe da placa-mãe — praticamente todas as placas-mãe atuais têm esse slot, então a compatibilidade aqui é mais sobre espaço físico e alimentação do que sobre encaixe.</p>
+
+  <div class="callout"><b>Regra prática:</b> para jogos, a GPU costuma pesar mais no orçamento total da build do que qualquer outra peça — é onde vale mais a pena investir se o uso principal é gaming.</div>
+
+  <a class="top-of-section" href="#gpu-detalhe">↑ topo desta seção</a>
+</section>
+
+<!-- ═══════════ PLACA-MÃE ═══════════ -->
+<section id="placa-mae-detalhe" class="component">
+  <div class="tag">Componente 03</div>
+  <h2><span class="icon-box">▦</span> Placa-mãe</h2>
+
+  <p>A placa-mãe é o esqueleto do PC: ela liga fisicamente todas as outras peças — processador, memória, armazenamento, placa de vídeo e periféricos. Não entrega desempenho sozinha, mas uma escolha errada trava o resto da montagem.</p>
+
+  <h3>O que olhar na hora de comprar</h3>
+  <ul>
+    <li><b>Socket:</b> precisa bater exatamente com o socket do processador escolhido (AM5, LGA1700, etc). Sem isso, a CPU simplesmente não encaixa.</li>
+    <li><b>Chipset:</b> define recursos disponíveis, como overclock, quantidade de portas e suporte a componentes mais recentes. Chipsets "mais completos" custam mais, mas nem todo mundo precisa deles.</li>
+    <li><b>Formato (ATX, mATX, ITX):</b> precisa ser compatível com o gabinete. Formatos menores cabem em gabinetes compactos, mas geralmente têm menos slots de expansão.</li>
+    <li><b>Compatibilidade de memória:</b> confira se a placa é DDR4 ou DDR5 — os dois tipos de memória não são intercambiáveis nem fisicamente compatíveis entre si.</li>
+    <li><b>Slots e portas:</b> quantidade de slots de RAM, portas M.2 (SSD), USB e conectividade (Wi-Fi, rede) variam bastante entre modelos.</li>
+  </ul>
+
+  <div class="callout"><b>Regra prática:</b> escolha o processador primeiro, depois a placa-mãe compatível com ele — nunca o caminho contrário.</div>
+
+  <a class="top-of-section" href="#placa-mae-detalhe">↑ topo desta seção</a>
+</section>
+
+<!-- ═══════════ RAM ═══════════ -->
+<section id="ram-detalhe" class="component">
+  <div class="tag">Componente 04</div>
+  <h2><span class="icon-box">▧</span> Memória RAM</h2>
+
+  <p>A memória RAM guarda temporariamente os dados que o processador está usando no momento. Quanto mais programas e processos rodando ao mesmo tempo, mais RAM é necessária para tudo continuar fluido, sem travamentos.</p>
+
+  <h3>O que olhar na hora de comprar</h3>
+  <ul>
+    <li><b>Capacidade:</b> 16GB é o padrão confortável hoje para jogos e uso geral; 32GB faz diferença real em edição de vídeo, várias VMs ou multitarefa pesada.</li>
+    <li><b>DDR4 vs DDR5:</b> DDR5 é mais rápida e mais eficiente, mas também mais cara — e depende da placa-mãe suportar o padrão. As duas gerações não são compatíveis entre si nem fisicamente (o encaixe é diferente).</li>
+    <li><b>Frequência (MHz):</b> quanto maior, mais rápida a transferência de dados — mas o ganho real em jogos costuma ser pequeno acima de certos patamares. Vale mais compensar por capacidade do que perseguir MHz altíssimo.</li>
+    <li><b>Dual channel:</b> usar dois pentes de memória (ex: 2x8GB em vez de 1x16GB) melhora o desempenho, porque a placa-mãe acessa os dois ao mesmo tempo.</li>
+  </ul>
+
+  <div class="callout"><b>Regra prática:</b> para a maioria dos usos, prefira dois pentes iguais em dual channel a um único pente maior — o ganho de desempenho compensa.</div>
+
+  <a class="top-of-section" href="#ram-detalhe">↑ topo desta seção</a>
+</section>
+
+<footer>
+  BUILDSHUB © 2026 — Preços médios coletados de Kabum, Pichau e Terabyte e confiáveis. Atualizados diariamente.
+</footer>
+
+</body>
+</html>
