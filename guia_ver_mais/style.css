@@ -19,7 +19,6 @@ body{
     line-height: 1.6;
 }
 
-  /* ── Top bar / nav ─────────────────────── */
 .topbar{
     position: sticky;
     top:0;
@@ -62,7 +61,6 @@ body{
     color: var(--blue);
 }
 
-  /* ── Header ────────────────────────────── */
 header.hero{
     padding: 56px 24px 32px;
     max-width: 900px;
@@ -93,13 +91,12 @@ a.back-link{
 }
 a.back-link:hover{ text-decoration: underline; }
 
-  /* ── Sections ──────────────────────────── */
 .component{
     max-width: 900px;
     margin: 0 auto;
     padding: 64px 24px;
     border-bottom: 1px solid var(--line);
-    scroll-margin-top: 80px; /* keeps content clear of sticky bar on jump */
+    scroll-margin-top: 80px;
 }
 .component:last-of-type{ border-bottom: none; }
 
