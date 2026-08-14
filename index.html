@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BUILDSHUB</title>
-
+<script src="script.js" defer></script>
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -223,6 +223,38 @@
             <a href="guia_ver_mais/guia-completo.html" class="ver-mais">ver mais →</a>
         </div>
     </div>
+</section>
+
+<section id="tira-duvidas" class="td-section">
+  <div class="td-container">
+    <p class="td-eyebrow">TIRE SUAS DÚVIDAS</p>
+    <h2 class="td-title">Alguma dúvida sobre montar seu PC?</h2>
+    <p class="td-subtitle">
+      Pergunte sobre compatibilidade, gargalo, escolha de peças ou qualquer coisa
+      sobre hardware. Respondido por IA em tempo real.
+    </p>
+
+    <div class="td-chat" id="td-chat">
+      <div class="td-messages" id="td-messages">
+        <div class="td-msg td-msg-bot">
+          Fala! Pode perguntar qualquer coisa sobre montagem de PC, compatibilidade
+          de peças, gargalo, fonte, refrigeração... Tô aqui pra ajudar.
+        </div>
+      </div>
+
+      <form class="td-input-row" id="td-form">
+        <input
+          type="text"
+          id="td-input"
+          class="td-input"
+          placeholder="Ex: RX 7600 combina com Ryzen 5 5600G?"
+          maxlength="2000"
+          autocomplete="off"
+        />
+        <button type="submit" class="td-send" id="td-send">enviar</button>
+      </form>
+    </div>
+  </div>
 </section>
 
 <footer class="rodape">

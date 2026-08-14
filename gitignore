@@ -1,0 +1,14 @@
+# Ambiente virtual Python (nunca versionar)
+backend/venv/
+venv/
+
+# Cache do Python
+__pycache__/
+*.pyc
+
+# Chave da API - segredo, nunca commitar
+.env
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
